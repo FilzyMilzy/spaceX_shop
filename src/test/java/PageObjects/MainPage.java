@@ -1,5 +1,7 @@
 package PageObjects;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MainPage extends BasePage {
@@ -8,7 +10,6 @@ public class MainPage extends BasePage {
         driver.get("https://shop.spacex.com/");
         PageFactory.initElements(driver, this);
     }
-
 
 
 
