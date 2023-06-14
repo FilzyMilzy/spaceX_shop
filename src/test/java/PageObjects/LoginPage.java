@@ -50,9 +50,10 @@ public class LoginPage extends BasePage {
         btnCreateAccount.click();
         return new RegisterPage();
     }
-    public static AccountPage auth(String loginValue, String passwordValue){
+    public static AccountPage auth(String loginValue, String passwordValue) throws InterruptedException {
         customerEmail.sendKeys(loginValue);
-        customerPassword.sendKeys(passwordValue, Keys.ENTER);
+        customerPassword.sendKeys(passwordValue);
+        //Thread.sleep(2500);
         //btnSubmit.click();
         return new AccountPage();
     }

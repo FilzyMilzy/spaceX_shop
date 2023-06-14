@@ -21,7 +21,5 @@ public class MainPage extends BasePage {
         return new LoginPage();
     }
 
-    }
-
 
 }
