@@ -11,6 +11,17 @@ public class MainPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//a[@href='/account']")
+    private static WebElement btnLoginToAccount;
+
+
+
+    public static LoginPage openLoginPage(){
+        btnLoginToAccount.click();
+        return new LoginPage();
+    }
+
+    }
 
 
 }
